@@ -52,8 +52,6 @@ target/
 # ============================================================
 # ENVIRONMENT VARIABLES & SECRETS
 # ============================================================
-.env
-.env.local
 .env.*.local
 .env.production.local
 .env.development.local
@@ -83,7 +81,6 @@ private/
 # ============================================================
 # IDE & Editor
 # ============================================================
-.vscode/
 !.vscode/extensions.json
 .idea/
 *.swp
@@ -184,3 +181,4 @@ bot-test/
 *.bak
 issues.md
 pr.md
+config.bat

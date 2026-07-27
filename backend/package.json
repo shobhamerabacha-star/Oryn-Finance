@@ -4,15 +4,15 @@
   "description": "Backend API server for Oryn Finance prediction market platform",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "node init && node server.js",
+    "dev": "node init && nodemon server.js",
     "prod": "NODE_ENV=production node server.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:stress": "jest --config jest.stress.config.js --runInBand",
     "seed": "node ../scripts/seed/seed.js",
-    "build": "echo 'No build step required for Node.js'",
+    "build": "node init && echo 'No build step required for Node.js'",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "deploy": "npm install --production && npm start"
